@@ -1,5 +1,5 @@
 ---
-layout: handout
+layout: post
 title: Inputs
 ---
 
