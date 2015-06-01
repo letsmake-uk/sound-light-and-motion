@@ -10,7 +10,7 @@ author:
 makerlab: "http://makerclub.org/makerlab"
 
 # Build settings
-baseurl: /sound-light-and-motion
+baseurl: /sound-light-and-motion/
 markdown: kramdown
 source: .
 destination: ./_site
