@@ -6,8 +6,6 @@ author:
   name: "N. Seymour-Smith and L. d'Aboville"
   url: "http://letsmake.io"
 
-# Links
-makerlab: "http://makerclub.org/makerlab"
 
 # Build settings
 baseurl: /sound-light-and-motion/
@@ -29,3 +27,6 @@ defaults:
 
 # Custom variables
 version: "1.0.1"
+
+# Links
+makerlab: "http://makerclub.org/makerlab"

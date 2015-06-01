@@ -1,11 +1,11 @@
 ---
 layout: handout
-title: Low-Pass Filters
+title: Low pass filters
 ---
 
 <br>
 
-Intro text
+Intro text.
 
 
 ## Galileo setup

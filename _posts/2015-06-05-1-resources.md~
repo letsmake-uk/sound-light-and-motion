@@ -1,11 +1,11 @@
 ---
 layout: handout
-title: Galileo setup
+title: The Intel Galileo
 ---
 
 <br>
 
-Intro text.
+Intro text
 
 
 ## Galileo setup
