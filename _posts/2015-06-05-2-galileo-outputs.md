@@ -19,8 +19,6 @@ The galileo can output two types of signal: *Digital* on/off signals, and *Analo
 
 The board can output *digital* signals on any of its pins (labelled 0-13). It can only output an *analog* signal on pins marked with a "***~***" (pronounced 'tilde'), so that's pins ~3, ~5, ~6, ~9, ~10 and ~11.
 
-The galileo (and all other arduino-compatible boards) use a technique called "PWM" to generate analog signals. This technique is good enough for a lot of day-to-day applications, but not so much for others. See the handout on Low Pass Filters for more info.
-
 
 ## Light-Emitting Diode (LED)
 <br>
@@ -38,7 +36,7 @@ It's also important to put the LED in the right way around. You'll notice that o
 
 A servo is a lot like a motor, but instead of being designed to turn with as much *power* as possible, it's designed to turn with as much *accuracy* as possible. As a result, it doesn't turn full circle. Instead it turns half a circle, from 0 to 180 degrees.
 
-The robot arm on one of the galileos is just three of these mounted inside a 3d-printed armature. Wire each one to a different analog output on your board.
+The robot arms on some of the galileos are just three of these mounted inside a 3d-printed armature. You can decide which inputs control which servos using Connect Anything - try and see if you can pick something up, or do a robot dance!
 
 ![Servo output](../img/galileo/Output - Servo_bb.png "Servo output")
 
@@ -46,21 +44,19 @@ The robot arm on one of the galileos is just three of these mounted inside a 3d-
 ## LED ring output
 <br>
 
-The LED rings on two of the galileos are controlled by arduino UNOs, which are like galileo's but with less features. This circuit shows you that you can control other microcomputers from your galileo!
+The LED rings on some of the galileos are controlled by arduino UNOs. This circuit shows you that you can control other microcomputers from your galileo!
 
 
-Like the galileo, the UNO has 5 analog inputs. This one has been programmed to accept signals sent to pins A0 and A1. The diagram below shows you how to connect an output of your galileo to an input of the arduino. You'll notice there are a couple of extra components in this circuit! This is a low pass filter circuit - it's there to 'clean up' the PWM signal coming out of the galileo - there's more info in the "Low Pass Filters" handout.
+The UNO reads the analog signals that you send it, which control the colour and brightness of the LED ring.
 
 
+![LED ring output](../img/galileo/Output - LED ring_bb.png "LED ring output")
 
-![LED ring output](../img/galileo/Output - LED ring - OneInput_bb.png "LED ring output")
 
-
-<!-- ## X11 mains output
+## Audio output
 <br>
 
-Description
+The speakers on some of the galileos are also controlled by arduino UNOs. They use the [Mozzi library](https://sensorium.github.io/Mozzi/) to generate sounds using the analog signals you send from the Galileo. Hook them up using Connect Anything and see what noises they can make! 
 
 
-![X11 mains output](../img/galileo/Output - LED ring_bb.png "X11 mains output")
--->
+![Audio output](../img/galileo/Output - soundModule_bb.png "Audio output")
