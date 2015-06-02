@@ -1,0 +1,6 @@
+<div id="post-page">
+	<a href="{{ site.baseurl }}">
+	  <h2>About us:</h2>
+	</a>
+	We are people, here's some stuff we do!
+</div>
